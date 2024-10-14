@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Fallen Knowledge</string>
+
+    <string name="na">Name</string>
+    <string name="modifyView">Modify Resource</string>
+    <string name="createView">Create Resource</string>
+
+    <string name="title">Title</string>
+    <string name="description">Description of Resource</string>
+    <string name="imageHint">Image of the Resource</string>
+    <string name="image">Image of the Resource [URL]</string>
+    <string name="tipe">Tipe of the Resource</string>
+    <string name="url">Link to the Resource</string>
+    <string name="urlUri">Tipe of the Resource [URL]</string>
+
+    <string name="button_modify">Modify Resource</string>
+    <string name="button_add">Add Resource</string>
 </resources>

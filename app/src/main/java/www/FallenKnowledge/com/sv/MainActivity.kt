@@ -119,22 +119,22 @@ class MainActivity : AppCompatActivity() {
     private fun Show(resource: Resource){
         val i = Intent(getBaseContext(), ShowResource::class.java)
         i.putExtra("id_resource", resource.id)
-        i.putExtra("titulo", resource.title)
-        i.putExtra("descripcion", resource.description)
-        i.putExtra("tipo", resource.tipe)
-        i.putExtra("enlace", resource.url)
-        i.putExtra("imagen", resource.image)
+        i.putExtra("title", resource.title)
+        i.putExtra("description", resource.description)
+        i.putExtra("tipe", resource.tipe)
+        i.putExtra("url", resource.url)
+        i.putExtra("image", resource.image)
         startActivity(i)
     }
 
     private fun Modify(resource: Resource) {
         val i = Intent(getBaseContext(), ModifyResource::class.java)
         i.putExtra("id_resource", resource.id)
-        i.putExtra("titulo", resource.title)
-        i.putExtra("descripcion", resource.description)
-        i.putExtra("tipo", resource.tipe)
-        i.putExtra("enlace", resource.url)
-        i.putExtra("imagen", resource.image)
+        i.putExtra("title", resource.title)
+        i.putExtra("description", resource.description)
+        i.putExtra("tipe", resource.tipe)
+        i.putExtra("url", resource.url)
+        i.putExtra("image", resource.image)
 
         startActivity(i)
     }

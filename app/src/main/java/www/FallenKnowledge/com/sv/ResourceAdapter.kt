@@ -25,8 +25,17 @@ class ResourceAdapter(private val resources: List<Resource>) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val resource = resources[position]
-        holder.titlerv.text = resource.title
-        holder.descriptionrv.text = resource.description
+        if (resource.title == ""){
+            holder.titlerv.text = "No Title found"
+        }else{
+            holder.titlerv.text = resource.title
+        }
+
+        if (resource.description == ""){
+            holder.descriptionrv.text = "No Description found"
+        }else{
+            holder.descriptionrv.text = resource.description
+        }
 
         Picasso.get().load(resource.image).into(holder.imagerv)
 
